@@ -5,25 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Guessing Game</title>
+
+    <!---------- Daisy UI --------->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="min-h-screen bg-[url('image/backgound_pic.jpg')] bg-cover bg-center flex justify-center items-center">
-    <div class="bg-opacity-90 shadow-xl p-8 w-96 rounded-lg">
-        <h1 class="text-2xl font-bold text-start mb-4">Number Guessing Game</h1>
-        <p class="text-center text-gray-700 mb-4">Think of a number between 1 and <span id="max-number"
-                class="font-semibold">100</span>.</p>
-        <p id="current-guess" class="text-center text-xl font-semibold mb-6">My guess will appear here!</p>
+<body class="min-h-screen bg-[url('image/backgound_pic.jpg')] bg-cover bg-center flex justify-left items-center">
 
+    <!------------ Whole Game is in Div ---------->
+    <div class="bg-opacity-90 shadow-xl p-8 w-98 rounded-lg ml-60">
+
+        <!-------- Upper Part -------->
+        <h1 class="text-5xl font-bold text-center text-blue-950 mb-4">Number Guessing Game</h1>
+        <p class="text-center text-lg font-bold text-blue-600 mb-4">Think of a number between 1 to <span id="max-number"
+                class="font-bold">100</span>.
+        </p>
+        <p id="current-guess" class="text-center text-xl text-black font-bold mb-6">My guess will appear here!</p>
+
+        <!--------- Button Part ---------->
         <div class="flex justify-around">
-            <button id="higher-btn" class="btn btn-primary">Higher</button>
-            <button id="lower-btn" class="btn btn-secondary">Lower</button>
-            <button id="correct-btn" class="btn btn-success">Correct</button>
+            <button id="higher-btn" class="btn btn-info font-bold">Higher</button>
+            <button id="lower-btn" class="btn btn-info font-bold">Lower</button>
+            <button id="correct-btn" class="btn btn-active btn-neutral font-bold">Correct</button>
         </div>
 
-        <p id="result" class="mt-6 text-center text-lg font-bold text-blue-500"></p>
+        <!---------- Result Part ---------->
+        <p id="result" class="mt-6 text-center text-lg font-bold text-blue-600"></p>
     </div>
+
+    <!---------- JS File ---------->
     <script src="guess.js"></script>
 </body>
 
