@@ -14,7 +14,7 @@ It's a fun and interactive game where the computer guesses a number you think of
 
 #Live Demo 🌐
 
-Link: 
+Link: https://6793d5f118922d76954fdf0b--musical-creponne-45debb.netlify.app/
 
 #Technologies Used 🛠️
 
